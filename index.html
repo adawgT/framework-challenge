@@ -1,20 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Homepage</title>
-    <link rel="stylesheet" href="screen.css">
-  </head>
-  <body>
-    <h1>Home</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
-    <script src="index.js"></script>
-  </body>
+    <title>Wedding Planner Contact Info</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .contact-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+<!-- Header -->
+<header class="bg-white shadow-sm py-3 mb-5">
+  <div class="container d-flex justify-content-between align-items-center">
+      <h1 class="text-primary">Elegant Weddings</h1>
+      <nav>
+          <a href="#" class="text-secondary px-3">Home</a>
+          <a href="#" class="text-secondary px-3">Services</a>
+          <a href="#" class="text-secondary px-3">Contact</a>
+      </nav>
+  </div>
+</header>
+
+<!-- Main Content -->
+<main class="container">
+  <div class="row">
+      <div class="col-md-8 mb-5">
+          <div class="contact-card">
+              <h2 class="text-secondary">Contact Us</h2>
+              <p>We'd love to hear from you! Please fill out the form below or contact us through the provided details.</p>
+              <!-- Contact Form -->
+              <form action="#" method="POST">
+                  <div class="mb-3">
+                      <label for="name" class="form-label">Name</label>
+                      <input type="text" id="name" name="name" class="form-control" required>
+                  </div>
+                  <div class="mb-3">
+                      <label for="email" class="form-label">Email</label>
+                      <input type="email" id="email" name="email" class="form-control" required>
+                  </div>
+                  <div class="mb-3">
+                      <label for="message" class="form-label">Message</label>
+                      <textarea id="message" name="message" rows="4" class="form-control" required></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Send Message</button>
+              </form>
+          </div>
+      </div>
+
+      <div class="col-md-4">
+          <div class="contact-card">
+              <h2 class="text-secondary">Our Contact Details</h2>
+              <p><strong>Phone:</strong> +1 (123) 456-7890</p>
+              <p><strong>Email:</strong> info@elegantweddings.com</p>
+              <p><strong>Address:</strong> 123 Wedding St, Celebration City, CA 98765</p>
+              <h3 class="mt-4 text-secondary">Follow Us</h3>
+              <div class="d-flex gap-3 mt-2">
+                  <a href="#" class="text-secondary">
+                      <svg class="bi bi-facebook" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                          <path d="M8 16a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm1-11h1V3H8.09c-.68 0-1.09.3-1.09.9v1.1H6v2h1V13h2V7h1.9l.1-2H9V4.1c0-.19.03-.32.06-.42.04-.1.09-.17.14-.21a.7.7 0 0 1 .3-.07z"/>
+                      </svg>
+                  </a>
+                  <a href="#" class="text-secondary">
+                      <svg class="bi bi-twitter" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                          <path d="M5.026 15C11.07 15 14.318 9.738 14.318 5.387c0-.104 0-.208-.004-.311A9.676 9.676 0 0 0 16 3.542a9.64 9.64 0 0 1-2.826.785A4.794 4.794 0 0 0 15.558 2c-.935.547-1.98.944-3.077 1.158A4.786 4.786 0 0 0 7.88 6.083a13.57 13.57 0 0 1-9.853-5 4.81 4.81 0 0 0-.649 2.411 4.81 4.81 0 0 0 2.13 4.005A4.737 4.737 0 0 1 .64 6.744v.05a4.808 4.808 0 0 0 3.852 4.711c-.42.111-.861.171-1.314.171a4.72 4.72 0 0 1-.904-.089 4.807 4.807 0 0 0 4.495 3.348A9.653 9.653 0 0 1 0 13.292 13.616 13.616 0 0 0 7.548 15z"/>
+                      </svg>
+                  </a>
+                  <a href="#" class="text-secondary">
+                      <svg class="bi bi-instagram" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                          <path d="M8 0c2.21 0 2.47.008 3.35.048 1.29.06 2.303.28 3.04.616.89.392 1.6.9 2.298 1.598.698.698 1.206 1.408 1.598 2.298.336.736.556 1.75.616 3.04.04.88.048 1.14.048 3.35 0 2.21-.008 2.47-.048 3.35-.06 1.29-.28 2.303-.616 3.04-.392.89-.9 1.6-1.598 2.298-.698.698-1.408 1.206-2.298 1.598-.736.336-1.75.556-3.04.616-.88.04-1.14.048-3.35.048-2.21 0-2.47-.008-3.35-.048-1.29-.06-2.303-.28-3.04-.616-.89-.392-1.6-.9-2.298-1.598-.698-.698-1.206-1.408-1.598-2.298-.336-.736-.556-1.75-.616-3.04C.008 10.47 0 10.21 0 8c0-2.21.008-2.47.048-3.35.06-1.29.28-2.303.616-3.04.392-.89.9-1.6 1.598-2.298C2.94.297 3.65-.212 4.54-.604 5.276-.94 6.29-.16 7.58-.108 8.46-.048 8.72 0 11 0zm0 1c-2.19 0-2.44.008-3.3.046-1.15.053-1.935.25-2.496.498-.63.272-1.103.634-1.707 1.238-.603.604-.965 1.077-1.238 1.707-.248.56-.445 1.345-.498 2.496C1.008 5.56 1 5.81 1 8c0 2.19.008 2.44.046 3.3.053 1.15.25 1.935.498 2.496.272.63.634 1.103 1.238 1.707.604.603 1.077.965 1.707 1.238.56.248 1.345.445 2.496.498.86.038 1.11.046 3.3.046s2.44-.008 3.3-.046c1.15-.053 1.935-.25 2.496-.498.63-.272 1.103-.634 1.707-1.238.603-.604.965-1.077 1.238-1.707.248-.56.445-1.345.498-2.496.038-.86.046-1.11.046-3.3s-.008-2.44-.046-3.3c-.053-1.15-.25-1.935-.498-2.496-.272-.63-.634-1.103-1.238-1.707-.604-.603-1.077-.965-1.707-1.238-.56-.248-1.345-.445-2.496-.498C10.44 1.008 10.19 1 8 1z"/>
+                          <path d="M8 3.882a4.118 4.118 0 1 0 0 8.236 4.118 4.118 0 0 0 0-8.236zm0 1a3.118 3.118 0 1 1 0 6.236A3.118 3.118 0 0 1 8 4.882zM12.146 3.15a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                      </svg>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-3 mt-5">
+  <div class="container text-center">
+      <p>&copy; 2024 Elegant Weddings. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS (optional) and dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
 </html>
